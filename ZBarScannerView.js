@@ -1,4 +1,4 @@
-import React, { Component ,PropTypes} from 'react';
+import React, { Component } from 'react';
 import {
     DeviceEventEmitter, // android
     NativeAppEventEmitter, // ios
@@ -9,6 +9,8 @@ import {
     View,
     ViewPropTypes
 } from 'react-native';
+
+import PropTypes from 'prop-types';
 
 const CameraManager = NativeModules.CameraManager || NativeModules.CameraModule;
 const CAMERA_REF = 'camera';

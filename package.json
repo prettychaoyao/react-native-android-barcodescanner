@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/react-native-studio/react-native-android-barcodescanner.git"
+    "url": "git+https://github.com/prettychaoyao/react-native-android-barcodescanner.git"
   },
   "keywords": [
     "scan",
@@ -18,7 +18,7 @@
   "author": "lmy2534290808",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/react-native-studio/react-native-android-barcodescanner/issues"
+    "url": "https://github.com/prettychaoyao/react-native-android-barcodescanner/issues"
   },
-  "homepage": "https://github.com/react-native-stutio/react-native-android-barcodescanner#readme"
+  "homepage": "https://github.com/prettychaoyao/react-native-android-barcodescanner#readme"
 }
