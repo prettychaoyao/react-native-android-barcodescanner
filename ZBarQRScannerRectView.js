@@ -122,7 +122,6 @@ class ZBarQRScannerRectView extends Component {
         if (!this.props.isLoading) {
             return null;
         }
-
         return (
             <ActivityIndicator
                 animating={this.props.isLoading}
@@ -334,7 +333,7 @@ class ZBarQRScannerRectView extends Component {
                 </View>
 
             </View>
-        );
+        )
     }
 
     componentDidMount() {
@@ -380,6 +379,7 @@ export default class ZBarQRScannerView extends Component {
         renderBottomMenuView:PropTypes.func,
         isShowScanBar:PropTypes.bool,
         bottomMenuStyle:PropTypes.object,
+        torchMode: PropTypes.bool
     };
 
     constructor(props) {
@@ -391,9 +391,9 @@ export default class ZBarQRScannerView extends Component {
     render() {
         return (
             <View style={{flex: 1}}>
-                <Camera
-                    onBarCodeRead={this.props.onScanResultReceived}
-                    style={{flex: 1}}
+                <Camera torchMode={this.props.torchMode}
+                        onBarCodeRead={this.props.onScanResultReceived}
+                        style={{flex: 1}}
                 >
                     {/*绘制顶部标题栏组件*/}
                     {this.props.renderTopBarView()}
